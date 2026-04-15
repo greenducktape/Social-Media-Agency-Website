@@ -338,6 +338,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-8 font-sans text-xs uppercase tracking-[0.2em] text-cream/50 font-bold">
+            <Link to="/leistungen" className="hover:text-g-yellow transition-colors">Leistungen</Link>
             <Link to="/impressum" className="hover:text-g-yellow transition-colors">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-g-yellow transition-colors">Datenschutz</Link>
           </div>

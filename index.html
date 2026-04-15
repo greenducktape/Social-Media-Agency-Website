@@ -7,16 +7,113 @@
     <meta name="description" content="Lizardo ist deine Social Media Agentur aus Stuttgart. Wir kreieren authentische digitale Erlebnisse, Reels und Content-Strategien für die Gen Z und darüber hinaus." />
     <meta name="keywords" content="Social Media Agentur Stuttgart, Content Creation, TikTok Agentur, Reels Produktion, Gen Z Marketing, Social Media Marketing, Daniel Lizardo" />
     <meta name="author" content="Daniel Lizardo" />
-    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://lizardo.co" />
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lizardo.co" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Lizardo" />
     <meta property="og:title" content="Lizardo | Social Media Agentur Stuttgart" />
     <meta property="og:description" content="Authentisches Social Media Marketing, das deine Marke spürbar macht. Strategie, Content Creation und messbare Ergebnisse." />
-    <meta property="og:site_name" content="Lizardo" />
+    <meta property="og:image" content="https://lizardo.co/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Lizardo – Social Media Agentur Stuttgart" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lizardo | Social Media Agentur Stuttgart" />
+    <meta name="twitter:description" content="Authentisches Social Media Marketing, das deine Marke spürbar macht. Strategie, Content Creation und messbare Ergebnisse." />
+    <meta name="twitter:image" content="https://lizardo.co/og-image.jpg" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://lizardo.co/#organization",
+          "name": "Lizardo",
+          "url": "https://lizardo.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lizardo.co/og-image.jpg"
+          },
+          "email": "daniel@lizardo.co",
+          "founder": {
+            "@type": "Person",
+            "name": "Daniel Lizardo"
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://lizardo.co/#localbusiness",
+          "name": "Lizardo",
+          "description": "Social Media Agentur aus Stuttgart – Content Creation, TikTok, Reels und Social Media Strategie für Unternehmen und Marken.",
+          "url": "https://lizardo.co",
+          "email": "daniel@lizardo.co",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Stuttgart",
+            "addressRegion": "Baden-Württemberg",
+            "addressCountry": "DE"
+          },
+          "areaServed": [
+            "Stuttgart",
+            "Baden-Württemberg",
+            "Deutschland"
+          ],
+          "priceRange": "$$",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Social Media Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Social Media Strategie",
+                  "description": "Maßgeschneiderte Social Media Strategie basierend auf deinen Zielen und Ressourcen."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Content Creation & Reels",
+                  "description": "Professionelle Produktion von TikToks, Reels und Social Media Content."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "TikTok Marketing",
+                  "description": "TikTok-Kampagnen und Content-Formate für Gen Z und junge Zielgruppen."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://lizardo.co/#website",
+          "url": "https://lizardo.co",
+          "name": "Lizardo",
+          "inLanguage": "de-DE",
+          "publisher": {
+            "@id": "https://lizardo.co/#organization"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
