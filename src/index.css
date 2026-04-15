@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Fraunces", ui-serif;
+  --font-sans: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces Variable", ui-serif, Georgia, serif;
   
-  --color-twilight: #1B263B;
-  --color-sand: #E0C9A6;
-  --color-phosphor: #A7C957;
-  --color-ink: #0D1321;
+  /* Sunset Safari Theme */
+  --color-cream: #F7F3E8; /* Warm Cream */
+  --color-charcoal: #2C2724; /* Warm Dark Grey */
+  --color-g-blue: #D85A42; /* Terracotta (Primary Accent) */
+  --color-g-red: #264653; /* Forest Green */
+  --color-g-yellow: #E9C46A; /* Mustard Gold (Secondary Accent) */
+  --color-g-green: #2A9D8F; /* Teal (Pop Color) */
 
   --animate-marquee: marquee 20s linear infinite;
 
@@ -19,6 +21,12 @@
 }
 
 body {
-  background-color: var(--color-twilight);
-  color: var(--color-sand);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
+
+.reverse-contact {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: inline-block;
 }
