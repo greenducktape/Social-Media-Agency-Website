@@ -59,9 +59,10 @@ export default function Datenschutz() {
             </ul>
             <p className="mt-2">Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
 
-            <h3 className="text-xl font-bold text-charcoal mb-2 mt-6">Kontaktformular</h3>
+            <h3 className="text-xl font-bold text-charcoal mb-2 mt-6">Kontaktformular (Formspark)</h3>
             <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-            <p className="mt-2">Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+            <p className="mt-2">Für die sichere und zuverlässige Abwicklung unseres Kontaktformulars nutzen wir den Dienst <strong>Formspark</strong> (formspark.io), einen Service aus Belgien (EU). Wenn Sie das Formular absenden, werden Ihre eingegebenen Daten an die Server von Formspark in der Europäischen Union übermittelt und dort verarbeitet, um sie an unser E-Mail-Postfach weiterzuleiten.</p>
+            <p className="mt-2">Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO). Wir haben mit Formspark einen Vertrag zur Auftragsverarbeitung (AVV) geschlossen, um den Schutz Ihrer Daten sicherzustellen.</p>
           </section>
         </div>
       </main>

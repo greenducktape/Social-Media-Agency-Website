@@ -14,25 +14,41 @@ export default function Home() {
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
   const [isHoveringCTA, setIsHoveringCTA] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     const form = e.target as HTMLFormElement;
     const email = (form.elements.namedItem('email') as HTMLInputElement).value;
     const message = (form.elements.namedItem('message') as HTMLTextAreaElement).value;
     
-    // Open the user's default email client
-    window.location.href = `mailto:daniel@lizardo.co?subject=Neue Anfrage über Website&body=${encodeURIComponent("Von: " + email + "\n\n" + message)}`;
-
     setFormStatus('submitting');
     
-    setTimeout(() => {
-      setFormStatus('success');
-      setTimeout(() => {
-        setIsModalOpen(false);
-        setTimeout(() => setFormStatus('idle'), 300);
-      }, 2000);
-    }, 1000);
+    try {
+      const response = await fetch('https://submit-form.com/AiJr23JHo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({ email, message }),
+      });
+      
+      if (response.ok) {
+        setFormStatus('success');
+        setTimeout(() => {
+          setIsModalOpen(false);
+          setTimeout(() => setFormStatus('idle'), 300);
+        }, 2000);
+      } else {
+        console.error('Form submission failed');
+        setFormStatus('idle');
+        alert('Hoppla! Da ist etwas schiefgelaufen. Bitte versuche es später noch einmal.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setFormStatus('idle');
+      alert('Hoppla! Da ist etwas schiefgelaufen. Bitte versuche es später noch einmal.');
+    }
   };
 
   return (
